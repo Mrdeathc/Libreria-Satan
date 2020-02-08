@@ -1,0 +1,123 @@
+.contenedorH {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "heade             heade               heade"
+                         "portada           informacion         informacion"
+                         "portada           informacion         informacion"
+                         "descripcion       descripcion         descripcion"
+                         "portada2           informacion2         informacion2"
+                         "portada2           informacion2         informacion2"
+                         "descripcion2       descripcion2         descripcion2"
+                         "footer3           footer3             footer3";
+}
+
+.contenedorH .footer3 {
+    grid-area: footer3;
+    height: 400px;
+    background: rgb(42, 42, 42);
+    padding: 4em 0em 0em 4em;
+}
+
+.contenedorH .heade {
+    grid-area: heade;
+    height: 800px;
+}
+
+.contenedorH .portada {
+    grid-area: portada;
+}
+
+.contenedorH .informacion {
+    grid-area: informacion;
+    padding: 2em 4em 2em 4em;
+    background: rgba(0, 0, 0, 0.591);
+}
+
+.contenedorH .descripcion {
+    grid-area: descripcion;
+    padding: 2em 6em 2em 6em;
+    background: #000;
+}
+.contenedorH .portada2 {
+    grid-area: portada2;
+}
+
+.contenedorH .informacion2 {
+    grid-area: informacion2;
+    padding: 2em 4em 2em 4em;
+    background: rgba(0, 0, 0, 0.591);
+}
+
+.contenedorH .descripcion2 {
+    grid-area: descripcion2;
+    padding: 2em 6em 2em 6em;
+    background: #000;
+}
+
+.libros-cont {
+    margin: auto;
+    width: 70%;
+    display: block;
+}
+.libros-text {
+    margin-top: 2em;
+    color: aliceblue;
+    font-weight: 100;
+}
+.libros-titul {
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.libros-subt {
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.btn-compra {
+    color: white;
+    border: 1px solid white;
+    padding: 1em 3em 1em 3em;
+    margin-top: 2em;
+}
+.btn-compra:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.388);
+    color: #000;
+    border: 1px solid #000;
+}
+.btn-compra:active {
+    cursor: pointer;
+    background: rgba(198, 1, 1, 0.388);
+    color: rgb(255, 255, 255);
+    border: 1px solid #000;
+}
+
+@media (max-width: 600px) {
+
+    .libros-titul {
+
+        font-size: 1rem;
+    
+    }
+    .libros-subt {
+
+        font-size: 0.5rem;
+
+    }
+    .libros-text {
+        font-size: 0.5rem;
+    }
+    .btn-compra {
+        padding: 0.5em 1em 0.5em 1em;
+
+    }
+    .libros-cont {
+
+        width: 300%;
+
+    }
+
+    }
